@@ -7,7 +7,7 @@ let containerWidth = window.innerWidth * (1200 / 1280);
 let cardWidth = containerWidth * 0.5 * 0.15;
 let cardHeight = cardWidth * (483 / 357);
 let cardNum = 77;//表示するカードの枚数
-let cardCrs = './img/card3.jpg';
+let cardCrs = './img/cardImg.png';
 let cardLists;
 let cardX;
 let gFlame = 40;
@@ -320,7 +320,7 @@ function cardBic() {
     cardLists[10].style.width = '45%';
     cardLists[10].style.zIndex = '100';
     cardCreate();
-    cardImgElement.src = './img/card_a.png';
+    cardImgElement.src = './img/openCard.png';
     animationCo.appendChild(cardElement);
     cardElement.classList.add('card_X');
     cardX = document.querySelector('.card_X');
