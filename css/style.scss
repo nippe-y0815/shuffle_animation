@@ -1,0 +1,120 @@
+.container{
+    width: calc(1200/1280 * 100%);
+    margin: 0 auto;
+    display: flex;
+    .main-box{
+        width: 50%;
+        height: 100vh;
+        padding-top: 50%;
+        margin: 0 auto;
+        position: relative;
+        background-image: url(../img/flower.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .animation-box{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            .animation{
+                position: relative;
+                .card-img{
+                    list-style: none;
+                    width: 15%;
+                    position: absolute;
+                    top: 300px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    transition: .5s ease-out;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                @keyframes animation_o {
+                    0%{
+                        opacity: 0;
+                    }
+                    100%{
+                        opacity: 1;
+                    }
+                }
+                @keyframes animation_o2{
+                    0%{
+                        opacity: 0;
+                    }
+                    100%{
+                        opacity: 1;
+                    }
+                }
+                @keyframes animation_o3{
+                    0%{
+                        opacity: 0;
+                    }
+                    100%{
+                        opacity: 1;
+                    }
+                }
+                @keyframes animation_o4{
+                    0%{
+                        opacity: 0;
+                    }
+                    100%{
+                        opacity: 1;
+                    }
+                }
+                .opacity{
+                    animation: animation_o .5s; 
+                }
+                .opacity2{
+                    animation: animation_o2 .5s; 
+                }
+                .opacity3{
+                    animation: animation_o3 .5s; 
+                }
+                .opacity4{
+                    animation: animation_o4 .5s; 
+                }
+                .card-add-class{
+                   transition: 1s all;
+                }
+                .card_X{
+                    width: 45%;
+                }
+            }
+        }
+        .box-cover{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #000;
+            opacity: 0;
+        }
+        .box-cover-show{
+            transition: .5s all;
+            opacity: 0.7;
+        }
+    }
+    .button-box{
+        width: 40%;
+        padding: 0 auto 0 30px;
+        input{
+            transition: .5s all;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            &:hover{
+             transition: .5s all;
+             background-color: #fff;
+             color: #000;
+            }
+         }
+    }
+}
